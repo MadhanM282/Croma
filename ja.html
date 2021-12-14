@@ -23,9 +23,10 @@
             grid-gap: 10px;
             margin: auto;
             justify-content: center;
-            grid-template-rows: repeat(1, 250px);
+            grid-template-rows: 90px 250px;
             grid-template-columns: 20px repeat(3, 1fr) 20px;
             grid-template-areas:
+                "t t . . ."
                 "l a b c r";
         }
 
@@ -69,11 +70,20 @@
             height: 100%;
             border-radius: 10px;
         }
+
+        .txt {
+            grid-area: t;
+            padding-left: 50px;
+            font-family: serif;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <div class="txt">
+            <h1>Highlights</h1>
+        </div>
         <div class="l"><i class="fas fa-angle-left"></i></div>
         <div class="a">
             <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638984838/Croma%20Assets/CMS/Homepage%20Banners/Highlights/2021/HP_Tile_TravelEssentials_8Dec_cnvgkg.png/mxw_1440,f_auto"

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            display: grid;
+            width: 90%;
+            height: 400px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 60px 250px;
+            grid-template-areas:
+                "t . . ."
+                "a b c d";
+
+        }
+
+        .txt {
+            grid-area: t;
+        }
+
+        .a {
+            grid-area: a;
+
+        }
+
+        .b {
+            grid-area: b;
+
+        }
+
+        .c {
+            grid-area: c;
+
+        }
+
+        .d {
+            grid-area: d;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="txt">
+            <h1>Popular Products</h1>
+        </div>
+        <div class="a">
+            <div>
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605264356/Croma%20Assets/Communication/Mobiles/Images/9001728606238.png/mxw_240,f_auto"
+                    alt="">
+            </div>
+            <h3>Apple iPhone 11 (64GB ROM, 4GB RAM....</h3>
+            <h3>₹49,900.00</h3>
+        </div>
+        <div class="b">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605269941/Croma%20Assets/Communication/Mobiles/Images/8999510638622.png/mxw_240,f_auto"
+                alt="">
+            <h3>Apple iPhone 12 (128GB ROM, 4GB RAM....</h3>
+            <h3>₹68,900.00</h3>
+        </div>
+        <div class="c">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605272155/Croma%20Assets/Communication/Mobiles/Images/8999513391134.png/mxw_240,f_auto"
+                alt="">
+            <h3>Apple iPhone 12 (64GB ROM, 4GB RAM.......</h3>
+            <h3>₹63,900.00</h3>
+        </div>
+        <div class="d">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1632479986/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/243179_svykpx.png/mxw_240,f_auto"
+                alt="">
+            <h3>pTron Avento Classic In-Ear Passive Noise Cancellation Wireless Earphone with.....</h3>
+            <h3>₹599.00</h3>
+        </div>
+    </div>
+</body>
+
+</html>
