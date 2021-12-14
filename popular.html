@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
     <title>Document</title>
+
     <style>
         * {
             background-color: black;
             color: white;
+            font-family: gotham, serif;
         }
 
-        .main {
+        .main,
+        .mobiles {
             display: grid;
-            width: 90%;
-            height: 400px;
-            grid-template-columns: repeat(4, 1fr);
+            width: 80%;
+            margin: auto;
+            height: 450px;
+            grid-gap: 20px;
+            grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 60px 250px;
             grid-template-areas:
-                "t . . ."
-                "a b c d";
+                "t t . . . ."
+                "l a b c d r";
 
         }
 
@@ -47,19 +54,65 @@
             grid-area: d;
 
         }
+
+        .main>div>div {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 50px;
+            margin-top: 0px;
+
+        }
+
+        h3:nth-child(3),
+        h3:nth-child(4) {
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .a>h3 {
+            justify-content: start;
+        }
+
+        .b>h3 {
+            justify-content: start;
+        }
+
+        .l {
+            grid-area: l;
+            text-align: center;
+            padding-top: 85px;
+            font-size: 30px;
+        }
+
+        .r {
+            grid-area: r;
+            text-align: center;
+            padding-top: 85px;
+            color: rgb(54, 52, 52);
+            font-size: 30px;
+        }
+
+
+        span {
+            text-decoration: line-through;
+            color: rgb(100, 96, 96);
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <div class="l"><i class="fas fa-angle-left"></i></div>
         <div class="txt">
             <h1>Popular Products</h1>
         </div>
+
         <div class="a">
-            <div>
-                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605264356/Croma%20Assets/Communication/Mobiles/Images/9001728606238.png/mxw_240,f_auto"
-                    alt="">
-            </div>
+
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605264356/Croma%20Assets/Communication/Mobiles/Images/9001728606238.png/mxw_240,f_auto"
+                alt="">
+
             <h3>Apple iPhone 11 (64GB ROM, 4GB RAM....</h3>
             <h3>₹49,900.00</h3>
         </div>
@@ -73,14 +126,55 @@
             <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605272155/Croma%20Assets/Communication/Mobiles/Images/8999513391134.png/mxw_240,f_auto"
                 alt="">
             <h3>Apple iPhone 12 (64GB ROM, 4GB RAM.......</h3>
-            <h3>₹63,900.00</h3>
+            <h3>₹63,900.00 <span>₹70,900.00</span></h3>
+
         </div>
         <div class="d">
             <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1632479986/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/243179_svykpx.png/mxw_240,f_auto"
                 alt="">
-            <h3>pTron Avento Classic In-Ear Passive Noise Cancellation Wireless Earphone with.....</h3>
-            <h3>₹599.00</h3>
+            <h3>pTron Avento Classic In-Ear Passive.....</h3>
+            <h3>₹599.00 <span>₹1,299.00</span></h3>
+
         </div>
+        <div class="r"><i class="fas fa-angle-right"></i></div>
+    </div>
+    <br>
+
+    <div class="mobiles">
+        <div class="l"><i class="fas fa-angle-left"></i></div>
+        <div class="txt">
+            <h1>Mobile Phones</h1>
+        </div>
+
+        <div class="a">
+
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1622812734/Croma%20Assets/Communication/Mobiles/Images/234465_omgmzg.png/mxw_240,f_auto"
+                alt="">
+
+            <h3>Oppo A53s (128GB ROM, 6GB RAM, CPH2321, Ink Black)</h3>
+            <h3>₹14,990.00 <span>₹16,990.00</span></h3>
+        </div>
+        <div class="b">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605277755/Croma%20Assets/Communication/Mobiles/Images/8943214100510.png/mxw_240,f_auto"
+                alt="">
+            <h3>Samsung Galaxy M11 (64GB ROM, 4GB RAM, Black)</h3>
+            <h3>₹9,999.00<span>₹14,999.00</span></h3>
+        </div>
+        <div class="c">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605272167/Croma%20Assets/Communication/Mobiles/Images/8999513325598.png/mxw_240,f_auto"
+                alt="">
+            <h3>Apple iPhone 12 (64GB ROM, 4GB RAM.......</h3>
+            <h3>₹63,900.00 <span>₹70,900.00</span></h3>
+
+        </div>
+        <div class="d">
+            <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638452106/Croma%20Assets/Communication/Mobiles/Images/233910_yvmohs.png/mxw_240,f_auto"
+                alt="">
+            <h3>OnePlus 9R (128GB ROM, 8GB RAM, LE2101, Carbon Black)</h3>
+            <h3>₹39,999.00 </h3>
+
+        </div>
+        <div class="r"><i class="fas fa-angle-right"></i></div>
     </div>
 </body>
 
