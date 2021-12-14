@@ -1,3 +1,3 @@
-# landing_page
- 
-hi this is the new project
+# CROMA
+
+MAKING A CLONE OF CROMA PAGE
