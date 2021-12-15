@@ -7,12 +7,18 @@
 }
   
    /* headerStyle :start */
+   body{
+       height: 1966px;
+       
+
+   }
 header{
     width:100%;
     height: 40px;
     background-color:#000000;
     border-bottom: 2px solid #353535;
     font-family: 'Gotham',serif;
+    
 
 
 }
@@ -77,6 +83,7 @@ header{
     font-family: 'Gotham',sans-serif;
     font-weight: 500;
     color: white;
+    
 
     
 
@@ -124,6 +131,7 @@ header{
     width: 91%; 
        
 }
+
 .main-nav>.search-box>.input-div>input[type=text]{
     height:40px;
     width: 100%;
@@ -198,7 +206,7 @@ header{
    
 }
 
-.cart>.cart-count{
+/* .cart>.cart-count{
     line-height: 1.85rem;
     position: absolute;
     top: 2.9rem;
@@ -213,4 +221,64 @@ header{
     font-size: 1rem;
     border: 2px solid #000;
     float: left;
+} */
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /* swipperCategory */
+  .swipper-menu{
+    background-color: #353535;
+    width: 100%;
+   
+      
+  }
+.swiper-cat{
+    
+    width: 80%;
+    height: 73px;
+    margin: auto;
+    color: white;
+    background-color: #353535;
+    font-family: 'Gotham',sans-serif;
+    display: flex;
+    text-align: center;
+    font-size: 15px; 
+    
+}
+
+.swiper-cat>div{
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    margin: auto;
+  
+}
+.swiper-cat>div>img{
+    height: 28px;
+    width: 28px;
+    
+
+}
+.swiper-cat>div>p{
+    margin-left: 12px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 12;
+    
+}
+.feed{
+    height: 350px;
+    width: 100%;
+    background-color: yellow;
+
 }
