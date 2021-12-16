@@ -134,7 +134,7 @@ header{
     background-color: black; 
     width: 100%; 
     border-radius: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: white;
        
 }
