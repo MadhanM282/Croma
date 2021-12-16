@@ -624,3 +624,37 @@ hr{
         border-radius: 10px ;
 
 }
+.note>div{
+    padding: 20px;
+    font-weight: lighter;
+     font-size: 15px;
+}
+
+.note>div:nth-child(2){
+   color: rgb(95, 92, 92);
+}
+/* ul li::marker {
+    color: cyan;
+    font-size: 1.5em;
+
+} */
+.bottom{
+    background: black;
+    color: white;
+    /* border: 1px solid; */
+}
+/* .bottom>div{
+    padding-left: 20px;
+} */
+#bottombox1{
+    width: 100%;
+    background: transparent;
+    color: turquoise;
+    font-size: 20px;
+    margin-top: 20px;
+    padding:30px;
+}
+#button{
+    font-size: 20px;
+    background: black;
+}
