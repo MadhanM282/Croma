@@ -75,7 +75,7 @@
                         // slider card end
 
     //  glide
-    new Glider(document.querySelector('.glider'), {
+    new Glider(document.querySelector('.glider'),{
         slidesToShow: 5,
         slidesToScroll: 5,
         draggable: true,
