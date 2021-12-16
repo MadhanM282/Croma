@@ -85,3 +85,17 @@
           next: '.glider-next'
         }
       });
+
+
+      // search input
+
+      // document.querySelector("#search").addEventListener("click",press);
+      // function press(){
+      //   var val = document.querySelector("#search").ariaValueMax;
+      //   if(val === "laptop"){
+          
+      //     window.location.href = "laptop.html"
+      //   }
+      //   //console.log(val);
+
+      // }
