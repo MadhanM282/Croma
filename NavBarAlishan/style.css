@@ -410,4 +410,54 @@ header{
  width: 285px;
  margin: auto;
 }
+.fa-heart{
+    font-size: 19px;
+    float: right;
+    margin-top: 2px;
+    margin-right:19px;
+    margin-top: 25px;
+    color: white;
+}
+.fa-heart:hover{
+    color: #40e0d0;
+
+}
+.prod1>img{
+    margin: auto;
+    margin-left: 20px;
+    height: 215px;
+    margin-bottom: 20px;
+}
+.prod1>p{
+    width: 100%;
+    /* line-height: 20px; */
+   text-align:left;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+.price>.first-pr{
+    border: 1px solid red;
+    width: 50%;
+    font-size: 20px;
+}
+.price>.sec-pr{
+    width: 50%;
+    float: right;
+    border: 1px solid red;
+    margin-left: 25px;
+    text-align:right;
+    text-decoration: line-through;
+
+}
+.checked {
+    color: #40e0d0;
+  }
 /* recently end */
+

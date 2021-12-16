@@ -14,7 +14,12 @@
                 }
                             // fixed nav bar closed
 
-                            // slider card start
+
+
+
+
+
+ // slider card start
                             var slides = document.querySelectorAll('.slide');
                             var btns = document.querySelectorAll('.btn');
                             let currentSlide = 1;
@@ -68,3 +73,15 @@
                             }
                             repeat();
                         // slider card end
+
+    //  glide
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        }
+      });
