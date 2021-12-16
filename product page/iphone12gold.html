@@ -157,14 +157,12 @@
             </div>
             <div class="productdiscription">
                 <div>
-                    <h1>Apple iPhone 12 (64GB ROM, 4GB RAM, MGJ63HN/A, White)
-                    </h1>
+                    <h1>Apple iPhone 12 (64GB ROM, 4GB RAM, MGJ63HN/A, White)</h1>
                 </div>
                 <!-- rating part -->
                 <div id="productid">
                     <div>
-                        <h4 class="ID">PRODUCT ID: 229920
-                        </h4>
+                        <h4 id="ID">PRODUCT ID: 229920</h4>
                     </div>
                     <div class="information">
                         <i class="far fa-star"></i>
@@ -180,10 +178,7 @@
                 <!-- end of rating -->
                 <!-- pricing -->
                 <div class="pricing">
-                    <h1 class="pric">₹63,900.00 <span><span class="str">MRP:
-                                ₹65,900.00</span>
-                            (Inclusive of all taxes)
-                        </span></h1>
+                    <h1 class="pric">₹63,900.00 </h1><span class="str">MRP:₹65,900.00</span><span>(Inclusive of all taxes)</span>
                 </div>
                 <!-- end of pricing -->
                 <div class="emi">
@@ -493,3 +488,20 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    var arr = [];
+    var name = document.querySelector("h1").textContent;
+    var image = "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605272155/Croma%20Assets/Communication/Mobiles/Images/8999513391134.png/mxw_1440,f_auto"
+    var id = document.querySelector("#ID").textContent;
+    var price = document.querySelector(".pric").textContent;
+    var strpric = document.querySelector(".str").textContent;
+    var obj = {
+        name: name,
+        img: image,
+        id: id,
+        price: price,
+        str: strpric
+    }
+    arr.push(obj)
+    localStorage.setItem("arr", JSON.stringify(obj));
+</script>
