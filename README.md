@@ -1,3 +1,3 @@
 # CROMA
 
-this is a project which we are creting 
+This is a project which we are creating 
