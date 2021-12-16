@@ -168,10 +168,10 @@ header{
 }
 
 
-hr{
+/* hr{
     color: rgb(71, 70, 70);
     margin-bottom: 50px;
-}
+} */
 .main-nav>.orders{
     width: 13%;
     text-align: center;
