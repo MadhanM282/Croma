@@ -8,7 +8,7 @@
         else if(val === "mobile"){
             window.location.href = "mobile.html"
         }
-        else if(val === "tv"){
+        else if(val === "telivision"){
           window.location.href = "tv.html"
         }
         else if(val === "audio"){
