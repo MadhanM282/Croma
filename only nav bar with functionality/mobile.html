@@ -59,7 +59,8 @@
     
             <div class="logo">
     
-                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_192,f_auto"
+                <img class="croma" onclick="croma()"
+                    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_192,f_auto"
                     alt="Croma Logo">
     
             </div>
@@ -158,21 +159,25 @@ mobiles.map(function (ele) {
     var img=document.createElement("img");
     img.setAttribute("src",ele.img);
     img.setAttribute("class",'image');
+
     var div1=document.createElement('div');
     div1.style.marginBottom="80px";
-                      var hr = document.createElement('hr');
-        hr . append( div1);
+    
     var div2=document.createElement('div');
     div2.style.display="flex";
+
     var name=document.createElement('h2');
     name.textContent=ele.name;
     name.style.color="white";
+
     var prod_id=document.createElement('p');
     prod_id.textContent=ele.id;
     prod_id.style.color="white";
+
     var price=document.createElement('h2');
     price.textContent=ele.price;
     price.style.color="white";
+
     div1.append(name,prod_id,price);
     div2.append(img,div1);
     document.querySelector(".mobile").append(div2);
@@ -190,17 +195,36 @@ mobiles.map(function (ele) {
             window.location.href = "laptop.html"
         }
 
-        else if (val === "teliviion") {
+        if (val === "teliviion" || "tv") {
             window.location.href = "tv.html"
         }
-        else if (val === "audio") {
+        if (val === "audio") {
             window.location.href = "audio.html"
         }
-        else {
-            alert("Oops! Match is not found")
-        }
+        
         console.log(val);
 
     }
+        </script>
+        <script>
+            document.querySelector(".croma").addEventListener("click", function croma() {
+                window.location.href = 'oldnav.html'
+            });
+        </script>
+        <script>
+            window.onscroll = function () { myFunction() };
+            var navbar = document.querySelector(".main-nav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+
+                }
+        else {
+            navbar.classList.remove("sticky");
+        }
+    }
 </script>
+
 

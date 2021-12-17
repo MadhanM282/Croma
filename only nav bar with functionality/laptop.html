@@ -69,7 +69,7 @@
             <div class="cart">
                 <p><i class="fas fa-shopping-cart"></i>CART</p>
                 <div class="cart-count">
-                    <p>5</p>
+                    <p></p>
                 </div>
             </div>
     
@@ -166,10 +166,10 @@ laptops.map(function (ele) {
         if (val === "mobile") {
             window.location.href = "mobile.html"
         }
-        else if (val === "telivision") {
+        if (val === "tv") {
             window.location.href = "tv.html"
         }
-        else if (val === "audio") {
+        if (val === "audio") {
             window.location.href = "audio.html"
         }
         else {
@@ -177,5 +177,25 @@ laptops.map(function (ele) {
         }
         console.log(val);
 
+    }
+</script>
+<script>
+    document.querySelector(".croma").addEventListener("click", function croma() {
+        window.location.href = 'oldnav.html'
+    });
+</script>
+<script>
+    window.onscroll = function () { myFunction() };
+    var navbar = document.querySelector(".main-nav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+
+        }
+        else {
+            navbar.classList.remove("sticky");
+        }
     }
 </script>
