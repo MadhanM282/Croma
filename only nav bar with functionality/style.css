@@ -502,7 +502,7 @@ h2{
    padding: 60px;
 }
 .mobile>div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
    border-bottom: 1px solid rgb(46,46,46);
    border-width: 0.2px;
    border-right-style: none;
