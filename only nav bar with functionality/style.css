@@ -288,6 +288,13 @@ hr{
     
 
 }
+.swiper-cat>div>img:hover{
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    
+
+}
 .swiper-cat>div>p{
     margin-left: 12px;
     margin-top: 5px;
@@ -470,6 +477,9 @@ hr{
     text-align:right;
     text-decoration: line-through;
 
+}
+.foot,.footing{
+    color: white;
 }
 .checked {
     color: #40e0d0;
