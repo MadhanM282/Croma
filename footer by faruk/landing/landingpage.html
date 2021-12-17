@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croma</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d7bc18a32d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landingpage.css">
 </head>
 <body>
-    <div>
         <header>
             <!-- this is pin box -->
             <div class="pin-box">
@@ -161,66 +160,86 @@
             </div>
         </div>
 
-        </body>
+
+    <h1 class="color clr">Mobiles</h1>
+    <div class="cont"></div>
+    <h1 class="color">Laptop</h1>
+    <div class="cont1"></div>
+    <h1 class="color">Television</h1>
+    <div class="cont2"></div>
+    <h1 class="color clr">Audio</h1>
+    <div class="cont3"></div>
+    <br><br>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="incontainer1">
+            <p>CONNECT WITH US</p>
+            <input type="Email" name="" id="email" placeholder="Enter Email ID ">
+            <br>
+            <br>
+            <i id="icon" class="fab fa-youtube"></i>
+            <i id="fb" class="fab fa-facebook-f"></i>
+            <i  id="insta" class="fab fa-instagram"></i>
+            <i id="in" class="fab fa-linkedin-in"></i>
+            <i id="tweet" class="fab fa-twitter"></i>
+            <p id="copyright">Copyright 2021 Croma. All rights <br> reserved</p>
+        </div>
+        <div class="incontainer2"></div>
+        <div class="incontainer3">
+            <div id="innerdiv1">
+             <p>USEFUL LINKS</p>
+             <P id="aboutcroma">About Croma</P>
+             <p>E-care</p>
+             <p>Help And Support</p>
+             <p>Franchise</p>
+             <p>FAQ</p>
+             <p>Oppurtunity</p>
+             <p>Return Policy</p>
+            </div>
+            <div id="innerdiv2">
+             <p id="sitemap">Site Map</p>
+             <p>Careers At Croma</p>
+             <p>Bulk Equity</p>
+             <p>Store Locator</p>
+             <p>Terms Of Use</p>
+             <p>Disclaimer</p>
+             <p>Delightful Programs</p>
+             <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="incontainer4"></div>
+        <div  class="incontainer5">
+            <div id="internal1">
+             <p>Products</p>
+             <p id="tele">Television & <br> Accessories</p>
+             <p>Home Appliances</p>
+             <p>Phone & Wearables</p>
+             <p>Computer & Tablets</p>
+             <p>Kitchen Appliances</p>
+            </div>
+            <div id="internal2">
+             <p id="audio">Audio & Video</p>
+             <p>Health & Fitness</p>
+             <p>Grooming & <br> Personal Care</p>
+             <p>Cameras & <br> Accessories</p>
+             <p>Smart Devices </p>
+             <p>Gaming </p>
+            </div>
+            
+        </div>
+ 
+    </div>
+   
+
+ </body>
 
 </html>
-<script>
-    document.querySelector("#search").addEventListener("click", press);
-    function press() {
-        var val = document.querySelector("#inp").value;
-        if (val === "laptop") {
-
-            window.location.href = "laptop.html"
-        }
-        if (val === "mobile" || "phone" || "mobiles") {
-            window.location.href = "mobile.html"
-        }
-        if (val === "tv") {
-            window.location.href = "tv.html"
-        }
-        if (val === "audio") {
-            window.location.href = "audio.html"
-        }
-        // else {
-        //     alert("Oops! Match is not found")
-        // }
-        // console.log(val);
-
-    }
-</script>
-<script>
-    window.onscroll = function () { myFunction() };
-    var navbar = document.querySelector(".main-nav");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-
-        }
-        else {
-            navbar.classList.remove("sticky");
-        }
-    }
-</script>
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-</script>
+<script src="landingpage.js"></script>
