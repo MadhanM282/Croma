@@ -79,7 +79,9 @@
                 </div>
 
                 <div class="my-account">
-                    <p>MY ACCOUNT<i class="fas fa-angle-down"></i></p>
+                    <p id="sign" onclick="sign()">sign up</p>
+                    
+                    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
 
                 </div>
 
@@ -209,6 +211,12 @@
         // }
         // console.log(val);
 
+    }
+    </script>
+    <script>
+        document.querySelector("#sign").addEventListener("click", sign);
+        function sign() {
+            window.location.href = "sign in.html"
     }
 </script>
 <!-- <script>
