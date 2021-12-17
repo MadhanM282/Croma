@@ -65,9 +65,26 @@
     
             </div>
             <div class="menu">
-                <button>
-                    <i class="fas fa-bars"></i>
-                    Menu</button>
+                <button onclick="myFunction()" class="dropbtn"> 
+                    <i class="fas fa-bars"></i>  
+                           Menu     
+                </button>
+                <div id="myDropdown" class="dropdown-content" >
+                    <h4>SELECT BY CATEGORY</h4>
+                    <p>Television & Accessories</p>
+                    <p>Home Appliances</p>
+                    <p>Phones and wearables</p>
+                    <p>Kitchen Appliances</p>
+                    <p>Audio & Video</p>
+                    <p>Health & Fitness</p>
+                    <p>Grooming & Personal care</p>
+                    <p>Camera & Accessories</p>
+                    <p>Smart Devices</p>
+                    <p>Gaming</p>
+                    <p>Accessories</p>
+                    <p>Top Brands</p>
+                 </div>
+
             </div>
     
             <div class="search-box">
@@ -78,6 +95,7 @@
                     <button type="submit" id="search" onclick="press()"><i class="fa fa-search"></i></button>
     
                 </div>
+
     
             </div>
     
@@ -239,5 +257,6 @@ mobiles.map(function (ele) {
         }
     }
 </script>
+<script src="menu.js"></script>
 
 

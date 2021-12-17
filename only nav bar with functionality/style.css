@@ -124,6 +124,9 @@ header{
 .dropdown-content p{
     padding: 12px 40px;
 }
+.dropbtn:hover{
+    cursor: pointer;
+}
 .dropdown-content p:hover{
     background-color: rgb(192, 230, 236);
     color: teal;
