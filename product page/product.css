@@ -313,6 +313,8 @@ hr{
     display: flex;
     /* border: 1px solid red; */
     height: 560px;
+    /* margin-top: 0px; */
+
     margin-top: 30px;
 }
 .imagepreview{
