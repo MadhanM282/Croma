@@ -269,20 +269,17 @@ h1{
 }
 #productid{
     display: flex;
-    width: 100%;
-    /* border: 1px solid red;  */
+    width: 85%;
+    /* border: 1px solid; */
     justify-content: space-between;
     align-items: center;
     
-}
-#productid>div{
-    /* border: 1px solid red; */
 }
 .information{
     font-size: 20px;
     /* align-content: center; */
     margin-left: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width:200px
 
     
