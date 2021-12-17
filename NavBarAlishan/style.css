@@ -460,4 +460,31 @@ header{
     color: #40e0d0;
   }
 /* recently end */
+body{
+    background:black;
+}
+.cont{
+    display:flex;
+    width:80%;
+    height:260px;
+    margin:auto;
+}
+.box{
+    width:24%;
+    height:100%;
+    font-size:10px;
+    text-align:center;
+    color:white;
+}
+.flex{
+    display:flex;
+    justify-content: space-evenly;
+}
+img{
+    width:180px;
+    height:180px;   
+  }
+.price1{
+text-decoration: line-through;
+}
 
