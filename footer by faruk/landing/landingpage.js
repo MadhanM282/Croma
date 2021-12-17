@@ -121,6 +121,9 @@ var mobiles = [
   
   
   });
+  function itemPage(){
+      console.log("here");
+  }
   
   
   
@@ -263,7 +266,7 @@ var mobiles = [
           image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1606073981/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/8975798992926.png/mxw_1125,f_auto",
           id:"PRODUCT ID: 225910",
           price:"899.00",
-          price1:"1,500.00",
+          price1:."1,500.00",
       },
        {
           name:"OnePlus Bullets Wireless Z Bass Edition In-Ear Wireless Earphone with Mic (Bluetooth 5.0, Quick Switch, 5481100067, Bold Black)",
@@ -305,6 +308,7 @@ var mobiles = [
     div.append(image,name,div2,star);
     var cont=document.querySelector(".cont3");
     cont.append(div);
+    ☆☆☆☆☆
   
   
   });

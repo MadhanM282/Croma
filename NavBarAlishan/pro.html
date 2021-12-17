@@ -188,6 +188,7 @@ laptops.map(function(elem){
   div.className="box";
   var image=document.createElement("img");
   image.setAttribute("src",elem.img);
+  image.setAttribute("onlick",getItem());
   var name=document.createElement("h3");
   name.className="line";
   name.textContent=elem.name;
@@ -209,6 +210,9 @@ laptops.map(function(elem){
   body.append(cont);
 
 });
+function getItem(){
+    window.location.href="laptop.html";
+}
 
 
 
